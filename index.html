@@ -149,7 +149,14 @@
       <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-full">Baixar PDF</a>
     </div>
   </section>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+    // Toggle menu mobile
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
 
   <section class="section">
     <h2>O que nossos usuários dizem</h2>
