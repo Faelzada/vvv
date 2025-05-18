@@ -69,20 +69,20 @@
       font-size: 1.2em;
     }
 
-    .ebooks {
+    .ebooks-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 30px;
       max-width: 1000px;
-      margin: auto;
+      margin: 0 auto;
     }
 
     .ebook {
       background-color: white;
       padding: 20px;
       border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       width: 280px;
       text-align: center;
     }
@@ -112,6 +112,11 @@
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
+      display: inline-block;
+    }
+
+    .ebook a:hover {
+      background-color: #2563eb;
     }
 
     .testimonial {
@@ -133,7 +138,7 @@
     }
 
     @media (max-width: 768px) {
-      .benefits, .ebooks {
+      .benefits, .ebooks-container {
         flex-direction: column;
         align-items: center;
       }
@@ -166,10 +171,9 @@
     </div>
   </section>
 
-  <!-- Substituído por seção dos eBooks -->
   <section class="section" id="como-funciona">
     <h2>Conheça nossos eBooks</h2>
-    <div class="ebooks">
+    <div class="ebooks-container">
       <div class="ebook">
         <img src="https://via.placeholder.com/150" alt="Capa eBook 1">
         <h3>eBook 1: Título do Livro</h3>
