@@ -1,196 +1,154 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgrinhoNews</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="shortcut icon" href="favicon.ico" />
-    <style>
-        body {
-            line-height: 1.6;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header.hero {
-            background: linear-gradient(to right, #4f46e5, #3b82f6);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        header.hero h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
-        header.hero p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-        }
-        .btn-primary-light {
-            background-color: white;
-            color: #4f46e5;
-            padding: 12px 25px;
-            font-size: 1em;
-            border: none;
-            border-radius: 6px;
-            font-weight: bold;
-        }
-        .benefits {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-            max-width: 900px;
-            margin: auto;
-        }
-        .benefit {
-            background-color: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            width: 250px;
-        }
-        .product-preview {
-            max-width: 700px;
-            margin: 40px auto;
-        }
-        .testimonial {
-            font-style: italic;
-            margin: 20px auto;
-            max-width: 600px;
-        }
-        @media (max-width: 768px) {
-            .benefits {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nome do Produto</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #4f46e5, #3b82f6);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background-color: white;
+      color: #4f46e5;
+      padding: 12px 25px;
+      font-size: 1em;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .benefits {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .benefit {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      width: 250px;
+    }
+
+    .benefit h3 {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+
+    .product-preview {
+      max-width: 700px;
+      margin: 40px auto;
+    }
+
+    .testimonial {
+      font-style: italic;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+
+    footer {
+      background-color: #3b82f6;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    footer .btn {
+      background-color: white;
+      color: #3b82f6;
+    }
+
+    @media (max-width: 768px) {
+      .benefits {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">AgrinhoNews</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#destaques">Destaques</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="noticias.html">Notícias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Sobre</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <header class="hero">
-        <h1>Transforme sua rotina com AgrinhoNews</h1>
-        <p>Uma plataforma simples e poderosa para quem vive o agro</p>
-        <a href="#como-funciona" class="btn btn-primary-light">Ver como funciona</a>
-    </header>
+  <header>
+    <h1>Transforme sua rotina com [Nome do Produto]</h1>
+    <p>Uma solução simples e poderosa para [problema que seu produto resolve]</p>
+    <a href="#como-funciona" class="btn">Ver como funciona</a>
+  </header>
 
-    <section class="py-5">
-        <h2 class="text-center mb-4">Por que escolher nosso produto?</h2>
-        <div class="benefits">
-            <div class="benefit">
-                <h3>📌 Simples de usar</h3>
-                <p>Interface intuitiva para qualquer usuário.</p>
-            </div>
-            <div class="benefit">
-                <h3>⚡ Rápido e eficiente</h3>
-                <p>Economize tempo com notícias organizadas.</p>
-            </div>
-            <div class="benefit">
-                <h3>🔒 Seguro e confiável</h3>
-                <p>Plataforma estável e responsiva para o agro.</p>
-            </div>
-        </div>
-    </section>
+  <section class="section">
+    <h2>Por que escolher nosso produto?</h2>
+    <div class="benefits">
+      <div class="benefit">
+        <h3>📌 Simples de usar</h3>
+        <p>Interface intuitiva para qualquer nível de usuário.</p>
+      </div>
+      <div class="benefit">
+        <h3>⚡ Rápido e eficiente</h3>
+        <p>Economize tempo com automações inteligentes.</p>
+      </div>
+      <div class="benefit">
+        <h3>🔒 Seguro e confiável</h3>
+        <p>Seus dados protegidos com criptografia de ponta.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="como-funciona" class="py-5 bg-light text-center">
-        <h2>Veja como funciona</h2>
-        <div class="product-preview">
-            <img src="https://via.placeholder.com/700x400" alt="Imagem do Produto" style="width:100%; border-radius: 8px;" />
-        </div>
-    </section>
+  <section class="section" id="como-funciona">
+    <h2>Veja como funciona</h2>
+    <div class="product-preview">
+      <img src="https://via.placeholder.com/700x400" alt="Imagem do Produto" style="width:100%; border-radius: 8px;" />
+    </div>
+  </section>
 
-    <section class="py-5">
-        <h2 class="text-center mb-4">O que nossos usuários dizem</h2>
-        <div class="testimonial">
-            “Desde que comecei a usar o AgrinhoNews, minha produtividade aumentou muito. Recomendo!”<br><strong>João, agricultor</strong>
-        </div>
-        <div class="testimonial">
-            “Simplesmente revolucionou meu dia a dia!”<br><strong>Carla, produtora rural</strong>
-        </div>
-    </section>
+  <section class="section">
+    <h2>O que nossos usuários dizem</h2>
+    <div class="testimonial">
+      “Desde que comecei a usar o produto, minha produtividade aumentou muito. Recomendo!”
+      <br><strong>– João, empreendedor</strong>
+    </div>
+    <div class="testimonial">
+      “Simplesmente revolucionou meu dia a dia!”
+      <br><strong>– Carla, freelancer</strong>
+    </div>
+  </section>
 
-    <section id="noticias" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Últimas Notícias</h2>
-            <div id="newsCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="noticia1.html">
-                            <img src="https://nexo-uploads-beta.s3.amazonaws.com/wp-content/uploads/images/2024/05/2024-05-06T163727Z_1548041212_RC21L7AJ4QPT_RTRMADP_3_BRAZIL-RAINS-scaled.jpg" class="d-block w-100" alt="Notícia 1">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Escassez de arroz, e agora?</h5>
-                                <p>As chuvas torrenciais que devastaram o Rio Grande do Sul nas últimas semanas...</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="noticia2.html">
-                            <img src="https://dji-official-fe.djicdn.com/dps/0042a681f6a88953425198b366794b57.jpg" class="d-block w-100" alt="Notícia 2">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Drones vão revolucionar a agricultura!</h5>
-                                <p>Como drones vão revolucionar a agricultura no Paraná...</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="noticia3.html">
-                            <img src="https://ogimg.infoglobo.com.br/in/22478190-785-706/FT1086A/75519524_BRASILBrasiliaBSBPA07-03-2018Fazendeiros-das-localidades-do-interior-de-Goi.jpg" class="d-block w-100" alt="Notícia 3">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Quais são as melhores formas de defender a sua fazenda?</h5>
-                                <p>Dicas de como defender a sua fazenda...</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#newsCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Anterior</span>
-                </a>
-                <a class="carousel-control-next" href="#newsCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Próxima</span>
-                </a>
-            </div>
-        </div>
-    </section>
+  <footer>
+    <h2>Pronto para experimentar?</h2>
+    <a href="#link-de-compra-ou-formulario" class="btn">Começar agora</a>
+  </footer>
 
-    <section id="sobre" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Sobre o AgrinhoNews</h2>
-            <p>O AgrinhoNews é uma plataforma dedicada a trazer as últimas notícias e informações relevantes sobre o mundo agrícola, desde as últimas tecnologias até as tendências de mercado.</p>
-        </div>
-    </section>
-
-    <footer class="py-4 bg-dark text-white text-center">
-        <div class="container">
-            <p>&copy; 2024 AgrinhoNews. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
