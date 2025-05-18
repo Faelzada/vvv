@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <script src="https://cdn.tailwindcss.com"></script>
- <title>Nome do Produto</title>
+  <title>Nome do Produto</title>
   <style>
     body {
       margin: 0;
@@ -70,9 +69,49 @@
       font-size: 1.2em;
     }
 
-    .product-preview {
-      max-width: 700px;
-      margin: 40px auto;
+    .ebooks {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .ebook {
+      background-color: white;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      width: 280px;
+      text-align: center;
+    }
+
+    .ebook img {
+      width: 128px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .ebook h3 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .ebook p {
+      font-size: 0.95em;
+      margin-bottom: 15px;
+    }
+
+    .ebook a {
+      background-color: #3b82f6;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     .testimonial {
@@ -94,7 +133,7 @@
     }
 
     @media (max-width: 768px) {
-      .benefits {
+      .benefits, .ebooks {
         flex-direction: column;
         align-items: center;
       }
@@ -127,34 +166,30 @@
     </div>
   </section>
 
-  <!-- Seção dos eBooks -->
-  <main class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    
-    <!-- eBook 1 -->
-    <div class="bg-white rounded-2xl shadow-md p-5 flex flex-col items-center text-center">
-      <img src="https://via.placeholder.com/150" alt="Capa eBook 1" class="rounded-xl mb-4 w-32 h-40 object-cover">
-      <h2 class="text-xl font-semibold mb-2">eBook 1: Título do Livro</h2>
-      <p class="text-sm mb-4">Descrição breve do eBook. Aprenda os conceitos fundamentais com exemplos práticos.</p>
-      <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-xl">Baixar</a>
+  <!-- Substituído por seção dos eBooks -->
+  <section class="section" id="como-funciona">
+    <h2>Conheça nossos eBooks</h2>
+    <div class="ebooks">
+      <div class="ebook">
+        <img src="https://via.placeholder.com/150" alt="Capa eBook 1">
+        <h3>eBook 1: Título do Livro</h3>
+        <p>Descrição breve do eBook. Aprenda os conceitos fundamentais com exemplos práticos.</p>
+        <a href="#">Baixar</a>
+      </div>
+      <div class="ebook">
+        <img src="https://via.placeholder.com/150" alt="Capa eBook 2">
+        <h3>eBook 2: Título do Livro</h3>
+        <p>Explore técnicas avançadas e aprofunde seus conhecimentos em pouco tempo.</p>
+        <a href="#">Baixar</a>
+      </div>
+      <div class="ebook">
+        <img src="https://via.placeholder.com/150" alt="Capa eBook 3">
+        <h3>eBook 3: Título do Livro</h3>
+        <p>Descubra novas abordagens e práticas recomendadas no seu campo de estudo.</p>
+        <a href="#">Baixar</a>
+      </div>
     </div>
-
-    <!-- eBook 2 -->
-    <div class="bg-white rounded-2xl shadow-md p-5 flex flex-col items-center text-center">
-      <img src="https://via.placeholder.com/150" alt="Capa eBook 2" class="rounded-xl mb-4 w-32 h-40 object-cover">
-      <h2 class="text-xl font-semibold mb-2">eBook 2: Título do Livro</h2>
-      <p class="text-sm mb-4">Explore técnicas avançadas e aprofunde seus conhecimentos em pouco tempo.</p>
-      <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-xl">Baixar</a>
-    </div>
-
-    <!-- eBook 3 -->
-    <div class="bg-white rounded-2xl shadow-md p-5 flex flex-col items-center text-center">
-      <img src="https://via.placeholder.com/150" alt="Capa eBook 3" class="rounded-xl mb-4 w-32 h-40 object-cover">
-      <h2 class="text-xl font-semibold mb-2">eBook 3: Título do Livro</h2>
-      <p class="text-sm mb-4">Descubra novas abordagens e práticas recomendadas no seu campo de estudo.</p>
-      <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-xl">Baixar</a>
-    </div>
-
-  </main>
+  </section>
 
   <section class="section">
     <h2>O que nossos usuários dizem</h2>
